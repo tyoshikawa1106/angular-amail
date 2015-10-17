@@ -36,6 +36,9 @@ angular.module("Services", [])
   return {
     all: function() {
       return getMessages();
+    },
+    get: function(key) {
+      return getMessages()[key];
     }
   };
 }]);

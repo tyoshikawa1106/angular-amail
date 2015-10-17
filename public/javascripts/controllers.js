@@ -5,5 +5,5 @@ angular.module("Controllers", ["Services"])
 }])
 // DetailController
 .controller("DetailController", ["$scope", "MessageData", "$routeParams", function($scope, MessageData, $routeParams){
-  $scope.message = MessageData.all()[$routeParams.id];
+  $scope.message = MessageData.get($routeParams.id);
 }]);
