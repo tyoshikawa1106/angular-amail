@@ -1,9 +1,9 @@
 angular.module("Controllers", [])
+// ListController
 .controller("ListController", ["$scope", function($scope){
-  
   $scope.messages = getMessages();
-
 }])
+// DetailController
 .controller("DetailController", ["$scope", "$routeParams", function($scope, $routeParams){
   $scope.message = getMessages()[$routeParams.id];
 }]);
