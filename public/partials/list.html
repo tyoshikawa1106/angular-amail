@@ -1,0 +1,14 @@
+<div class="slds-scrollable--x">
+  <table class="slds-table slds-table--bordered">
+    <tr>
+      <th><strong>送信者</strong></th>
+      <th><strong>件名</strong></th>
+      <th><strong>日時</strong></th>
+    </tr>
+    <tr ng-repeat="message in messages">
+      <td>{{message.sender}}</td>
+      <td><a href="#/view/{{message.id}}">{{message.subject}}</a></td>
+      <td>{{message.date}}</td>
+    </tr>
+  </table>
+</div>
